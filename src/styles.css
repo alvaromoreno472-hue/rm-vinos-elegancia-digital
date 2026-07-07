@@ -67,9 +67,9 @@
   --radius: 0.625rem;
 
   /* Brand palette */
-  --wine: oklch(0.38 0.13 20);            /* #6B1E2C burgundy */
-  --wine-deep: oklch(0.28 0.11 22);       /* deeper burgundy */
-  --wine-soft: oklch(0.55 0.14 24);       /* softened wine */
+  --wine: #701E32;                        /* granate exacto del logo */
+  --wine-deep: #4E1523;                   /* deeper granate */
+  --wine-soft: #A67480;                   /* softened granate */
   --gold: oklch(0.82 0.11 85);            /* #E8C878 antique gold */
   --gold-soft: oklch(0.90 0.06 88);       /* softer gold */
   --cream: oklch(0.97 0.017 82);          /* #F7F1E3 cream */
