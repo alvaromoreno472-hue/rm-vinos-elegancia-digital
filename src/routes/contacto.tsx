@@ -7,7 +7,11 @@ export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
       { title: "Contacto · RM Vinos con Historia" },
-      { name: "description", content: "Ponte en contacto con nosotros. Visitas guiadas, catas, pedidos y colaboraciones. La Rioja, España." },
+      {
+        name: "description",
+        content:
+          "Ponte en contacto con nosotros. Visitas guiadas, catas, pedidos y colaboraciones. La Rioja, España.",
+      },
       { property: "og:title", content: "Contacto · RM Vinos" },
       { property: "og:description", content: "Ponte en contacto con la bodega." },
       { property: "og:url", content: "/contacto" },
@@ -51,7 +55,8 @@ function Contacto() {
           <h1 className="mt-4 font-display text-5xl text-wine-deep md:text-6xl">Escríbenos</h1>
           <div className="mx-auto mt-5 h-px w-16 bg-gold" />
           <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            Visitas guiadas, catas, pedidos personalizados o cualquier consulta: estamos a tu disposición.
+            Visitas guiadas, catas, pedidos personalizados o cualquier consulta: estamos a tu
+            disposición.
           </p>
         </div>
       </section>
@@ -60,7 +65,12 @@ function Contacto() {
         <div className="grid gap-16 lg:grid-cols-[1.2fr_1fr]">
           <form onSubmit={onSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" className="mb-2 block text-xs uppercase tracking-[0.22em] text-wine">Nombre</label>
+              <label
+                htmlFor="name"
+                className="mb-2 block text-xs uppercase tracking-[0.22em] text-wine"
+              >
+                Nombre
+              </label>
               <input
                 id="name"
                 name="name"
@@ -71,7 +81,12 @@ function Contacto() {
               {errors.name && <p className="mt-2 text-xs text-destructive">{errors.name}</p>}
             </div>
             <div>
-              <label htmlFor="email" className="mb-2 block text-xs uppercase tracking-[0.22em] text-wine">Email</label>
+              <label
+                htmlFor="email"
+                className="mb-2 block text-xs uppercase tracking-[0.22em] text-wine"
+              >
+                Email
+              </label>
               <input
                 id="email"
                 name="email"
@@ -83,7 +98,12 @@ function Contacto() {
               {errors.email && <p className="mt-2 text-xs text-destructive">{errors.email}</p>}
             </div>
             <div>
-              <label htmlFor="message" className="mb-2 block text-xs uppercase tracking-[0.22em] text-wine">Mensaje</label>
+              <label
+                htmlFor="message"
+                className="mb-2 block text-xs uppercase tracking-[0.22em] text-wine"
+              >
+                Mensaje
+              </label>
               <textarea
                 id="message"
                 name="message"
@@ -101,7 +121,9 @@ function Contacto() {
               Enviar mensaje
             </button>
             {status === "ok" && (
-              <p className="text-sm text-wine">Gracias por escribirnos. Te responderemos lo antes posible.</p>
+              <p className="text-sm text-wine">
+                Gracias por escribirnos. Te responderemos lo antes posible.
+              </p>
             )}
           </form>
 
@@ -111,19 +133,35 @@ function Contacto() {
               <ul className="mt-6 space-y-5 text-sm">
                 <li className="flex items-start gap-3">
                   <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-gold" strokeWidth={1.5} />
-                  <span className="text-foreground/85">Calle del Viñedo, 12<br />26200 La Rioja, España</span>
+                  <span className="text-foreground/85">
+                    Calle Ferial, 15, 2º A
+                    <br />
+                    19002 Guadalajara, España
+                  </span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="h-5 w-5 shrink-0 text-gold" strokeWidth={1.5} />
-                  <a href="tel:+34900000000" className="text-foreground/85 hover:text-wine">+34 900 000 000</a>
+                  <a href="tel:+34900000000" className="text-foreground/85 hover:text-wine">
+                    +34 900 000 000
+                  </a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="h-5 w-5 shrink-0 text-gold" strokeWidth={1.5} />
-                  <a href="mailto:info@rmvinos.es" className="text-foreground/85 hover:text-wine">info@rmvinos.es</a>
+                  <a
+                    href="mailto:rmoreno@losvinosconhistoria.com"
+                    className="text-foreground/85 hover:text-wine"
+                  >
+                    rmoreno@losvinosconhistoria.com
+                  </a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Instagram className="h-5 w-5 shrink-0 text-gold" strokeWidth={1.5} />
-                  <a href="https://instagram.com/rmvinosconhistoria" target="_blank" rel="noopener noreferrer" className="text-foreground/85 hover:text-wine">
+                  <a
+                    href="https://instagram.com/rmvinosconhistoria"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/85 hover:text-wine"
+                  >
                     @rmvinosconhistoria
                   </a>
                 </li>
@@ -131,7 +169,11 @@ function Contacto() {
             </div>
             <div>
               <p className="eyebrow">Horario</p>
-              <p className="mt-4 text-sm text-foreground/85">Lunes a viernes · 10:00 – 18:00<br />Visitas guiadas con cita previa</p>
+              <p className="mt-4 text-sm text-foreground/85">
+                Lunes a viernes · 10:00 – 18:00
+                <br />
+                Visitas guiadas con cita previa
+              </p>
             </div>
           </aside>
         </div>
