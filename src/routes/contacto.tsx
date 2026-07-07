@@ -141,8 +141,8 @@ function Contacto() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="h-5 w-5 shrink-0 text-gold" strokeWidth={1.5} />
-                  <a href="tel:+34900000000" className="text-foreground/85 hover:text-wine">
-                    +34 900 000 000
+                  <a href="tel:+34605990031" className="text-foreground/85 hover:text-wine">
+                    +34 605 99 00 31
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
@@ -192,4 +192,3 @@ function Contacto() {
     </>
   );
 }
-

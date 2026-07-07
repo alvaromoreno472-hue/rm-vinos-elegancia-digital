@@ -44,4 +44,3 @@ export const Route = createFileRoute("/privacidad")({
     </div>
   ),
 });
-

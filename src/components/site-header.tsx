@@ -26,9 +26,7 @@ export function SiteHeader() {
   return (
     <header
       className={`sticky top-0 z-40 transition-all duration-300 ${
-        scrolled
-          ? "bg-wine/95 backdrop-blur-md shadow-lg"
-          : "bg-wine"
+        scrolled ? "bg-wine/95 backdrop-blur-md shadow-lg" : "bg-wine"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 md:px-8 md:py-5">
@@ -80,7 +78,11 @@ export function SiteHeader() {
             aria-expanded={open}
             className="flex h-10 w-10 items-center justify-center rounded-full text-cream lg:hidden"
           >
-            {open ? <X className="h-6 w-6" strokeWidth={1.5} /> : <Menu className="h-6 w-6" strokeWidth={1.5} />}
+            {open ? (
+              <X className="h-6 w-6" strokeWidth={1.5} />
+            ) : (
+              <Menu className="h-6 w-6" strokeWidth={1.5} />
+            )}
           </button>
         </div>
       </div>

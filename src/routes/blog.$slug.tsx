@@ -10,7 +10,12 @@ export const Route = createFileRoute("/blog/$slug")({
   },
   head: ({ loaderData, params }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Artículo no encontrado · RM Vinos" }, { name: "robots", content: "noindex" }] };
+      return {
+        meta: [
+          { title: "Artículo no encontrado · RM Vinos" },
+          { name: "robots", content: "noindex" },
+        ],
+      };
     }
     return {
       meta: [
@@ -25,7 +30,9 @@ export const Route = createFileRoute("/blog/$slug")({
     };
   },
   notFoundComponent: NotFound,
-  errorComponent: ({ error }) => <p className="p-10 text-center text-destructive">{error.message}</p>,
+  errorComponent: ({ error }) => (
+    <p className="p-10 text-center text-destructive">{error.message}</p>
+  ),
   component: BlogPost,
 });
 
@@ -33,7 +40,10 @@ function NotFound() {
   return (
     <div className="mx-auto max-w-2xl px-6 py-32 text-center">
       <h1 className="font-display text-4xl text-wine-deep">Artículo no encontrado</h1>
-      <Link to="/blog" className="mt-6 inline-block text-sm uppercase tracking-[0.22em] text-wine underline">
+      <Link
+        to="/blog"
+        className="mt-6 inline-block text-sm uppercase tracking-[0.22em] text-wine underline"
+      >
         Volver al blog
       </Link>
     </div>
@@ -46,17 +56,30 @@ function BlogPost() {
     <article>
       <header className="border-b border-border/60 bg-cream-warm">
         <div className="mx-auto max-w-3xl px-6 py-20 text-center md:py-24">
-          <Link to="/blog" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-wine hover:text-gold">
+          <Link
+            to="/blog"
+            className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-wine hover:text-gold"
+          >
             <ArrowLeft className="h-4 w-4" strokeWidth={1.5} />
             Volver al blog
           </Link>
-          <p className="eyebrow mt-8">{post.category} · {post.date}</p>
-          <h1 className="mt-4 font-display text-4xl leading-tight text-wine-deep md:text-5xl">{post.title}</h1>
+          <p className="eyebrow mt-8">
+            {post.category} · {post.date}
+          </p>
+          <h1 className="mt-4 font-display text-4xl leading-tight text-wine-deep md:text-5xl">
+            {post.title}
+          </h1>
         </div>
       </header>
 
       <div className="mx-auto max-w-5xl px-6 pt-12">
-        <img src={post.image} alt={post.title} className="aspect-[16/9] w-full object-cover" width={1600} height={900} />
+        <img
+          src={post.image}
+          alt={post.title}
+          className="aspect-[16/9] w-full object-cover"
+          width={1600}
+          height={900}
+        />
       </div>
 
       <div className="mx-auto max-w-3xl px-6 py-16 md:py-20">
@@ -65,13 +88,18 @@ function BlogPost() {
             {post.excerpt}
           </p>
           <p>
-            En esta entrada compartimos con vosotros los detalles y aprendizajes desde el viñedo y la bodega. Cada gesto, cada decisión, es fruto de años de experiencia acumulada por nuestra familia elaborando vinos en La Rioja.
+            En esta entrada compartimos con vosotros los detalles y aprendizajes desde el viñedo y
+            la bodega. Cada gesto, cada decisión, es fruto de años de experiencia acumulada por
+            nuestra familia elaborando vinos en La Rioja.
           </p>
           <p>
-            La elaboración artesanal exige tiempo y atención al detalle. En este blog documentamos lo que hacemos y por qué lo hacemos así, con la esperanza de que os acerque un poco más a nuestro trabajo.
+            La elaboración artesanal exige tiempo y atención al detalle. En este blog documentamos
+            lo que hacemos y por qué lo hacemos así, con la esperanza de que os acerque un poco más
+            a nuestro trabajo.
           </p>
           <p>
-            Si te interesa profundizar, no dudes en escribirnos o venir a visitarnos. La bodega está abierta con cita previa para catas y visitas guiadas.
+            Si te interesa profundizar, no dudes en escribirnos o venir a visitarnos. La bodega está
+            abierta con cita previa para catas y visitas guiadas.
           </p>
         </div>
 

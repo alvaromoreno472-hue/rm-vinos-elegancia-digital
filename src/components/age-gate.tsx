@@ -61,7 +61,8 @@ export function AgeGate() {
               </h2>
               <div className="mx-auto mt-3 h-px w-12 bg-gold" />
               <p className="mt-5 text-sm leading-relaxed text-cream/80">
-                Debes ser mayor de edad para acceder a este sitio. La venta de bebidas alcohólicas está restringida a personas mayores de 18 años.
+                Debes ser mayor de edad para acceder a este sitio. La venta de bebidas alcohólicas
+                está restringida a personas mayores de 18 años.
               </p>
             </>
           ) : (
@@ -72,7 +73,8 @@ export function AgeGate() {
               </h2>
               <div className="mx-auto mt-4 h-px w-12 bg-gold" />
               <p className="mt-6 text-sm leading-relaxed text-cream/80">
-                Para acceder a nuestro sitio es necesario que confirmes tu mayoría de edad. El consumo de alcohol está prohibido a menores de 18 años.
+                Para acceder a nuestro sitio es necesario que confirmes tu mayoría de edad. El
+                consumo de alcohol está prohibido a menores de 18 años.
               </p>
               <div className="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-center">
                 <button

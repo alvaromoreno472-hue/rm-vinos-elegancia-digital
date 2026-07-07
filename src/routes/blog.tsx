@@ -7,9 +7,16 @@ export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
       { title: "Blog · Cultura del vino · RM Vinos con Historia" },
-      { name: "description", content: "Artículos sobre vino, maridajes, eventos y cultura vinícola desde nuestra bodega familiar en La Rioja." },
+      {
+        name: "description",
+        content:
+          "Artículos sobre vino, maridajes, eventos y cultura vinícola desde nuestra bodega familiar en La Rioja.",
+      },
       { property: "og:title", content: "Blog · RM Vinos" },
-      { property: "og:description", content: "Artículos sobre vino, maridajes y cultura vinícola." },
+      {
+        property: "og:description",
+        content: "Artículos sobre vino, maridajes y cultura vinícola.",
+      },
       { property: "og:url", content: "/blog" },
     ],
     links: [{ rel: "canonical", href: "/blog" }],
@@ -21,7 +28,8 @@ export const POSTS = [
   {
     slug: "vendimia-2025",
     title: "Vendimia 2025: una añada excepcional",
-    excerpt: "El equilibrio perfecto entre calor diurno y noches frescas ha dado uvas con una madurez fenólica sobresaliente.",
+    excerpt:
+      "El equilibrio perfecto entre calor diurno y noches frescas ha dado uvas con una madurez fenólica sobresaliente.",
     category: "Bodega",
     date: "12 octubre 2025",
     image: grapesImg,
@@ -29,7 +37,8 @@ export const POSTS = [
   {
     slug: "maridaje-cordero-tempranillo",
     title: "Maridaje: cordero asado y Tempranillo",
-    excerpt: "Cómo elegir la crianza adecuada para acompañar el plato más emblemático de la mesa española.",
+    excerpt:
+      "Cómo elegir la crianza adecuada para acompañar el plato más emblemático de la mesa española.",
     category: "Maridajes",
     date: "28 septiembre 2025",
     image: heroImg,
@@ -37,7 +46,8 @@ export const POSTS = [
   {
     slug: "cata-comentada-noviembre",
     title: "Cata comentada en la bodega — 15 de noviembre",
-    excerpt: "Te invitamos a descubrir en primera persona el corazón de nuestra bodega y catar los vinos junto al enólogo.",
+    excerpt:
+      "Te invitamos a descubrir en primera persona el corazón de nuestra bodega y catar los vinos junto al enólogo.",
     category: "Eventos",
     date: "10 septiembre 2025",
     image: cellarImg,
@@ -45,7 +55,8 @@ export const POSTS = [
   {
     slug: "roble-frances-vs-americano",
     title: "Roble francés vs. americano: dos maneras de envejecer",
-    excerpt: "El tipo de barrica moldea el carácter del vino. Te contamos qué aporta cada madera y por qué elegimos combinarlas.",
+    excerpt:
+      "El tipo de barrica moldea el carácter del vino. Te contamos qué aporta cada madera y por qué elegimos combinarlas.",
     category: "Elaboración",
     date: "22 agosto 2025",
     image: cellarImg,
@@ -85,9 +96,15 @@ function Blog() {
             />
           </div>
           <div>
-            <p className="eyebrow">{featured.category} · {featured.date}</p>
-            <h2 className="mt-4 font-display text-4xl text-wine-deep md:text-5xl">{featured.title}</h2>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">{featured.excerpt}</p>
+            <p className="eyebrow">
+              {featured.category} · {featured.date}
+            </p>
+            <h2 className="mt-4 font-display text-4xl text-wine-deep md:text-5xl">
+              {featured.title}
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              {featured.excerpt}
+            </p>
             <span className="mt-8 inline-flex items-center gap-2 border-b border-wine pb-1 text-xs font-medium uppercase tracking-[0.24em] text-wine">
               Leer artículo
             </span>
@@ -113,8 +130,12 @@ function Blog() {
                   height={600}
                 />
               </div>
-              <p className="eyebrow mt-5">{post.category} · {post.date}</p>
-              <h3 className="mt-3 font-display text-2xl leading-tight text-wine-deep">{post.title}</h3>
+              <p className="eyebrow mt-5">
+                {post.category} · {post.date}
+              </p>
+              <h3 className="mt-3 font-display text-2xl leading-tight text-wine-deep">
+                {post.title}
+              </h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{post.excerpt}</p>
             </Link>
           ))}
