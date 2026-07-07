@@ -17,7 +17,8 @@ export function SiteFooter() {
               loading="lazy"
             />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-cream/70">
-              Bodega familiar dedicada a elaborar vinos con carácter, tradición y respeto por la tierra. Cada botella cuenta una historia.
+              Bodega familiar dedicada a elaborar vinos con carácter, tradición y respeto por la
+              tierra. Cada botella cuenta una historia.
             </p>
             <a
               href="https://instagram.com/rmvinosconhistoria"
@@ -33,12 +34,36 @@ export function SiteFooter() {
           <div>
             <h4 className="text-xs uppercase tracking-[0.24em] text-gold">Navegación</h4>
             <ul className="mt-5 space-y-3 text-sm text-cream/80">
-              <li><Link to="/" className="hover:text-gold">Inicio</Link></li>
-              <li><Link to="/historia" className="hover:text-gold">Historia</Link></li>
-              <li><Link to="/vinos" className="hover:text-gold">Vinos</Link></li>
-              <li><Link to="/tienda" className="hover:text-gold">Tienda</Link></li>
-              <li><Link to="/blog" className="hover:text-gold">Blog</Link></li>
-              <li><Link to="/contacto" className="hover:text-gold">Contacto</Link></li>
+              <li>
+                <Link to="/" className="hover:text-gold">
+                  Inicio
+                </Link>
+              </li>
+              <li>
+                <Link to="/historia" className="hover:text-gold">
+                  Historia
+                </Link>
+              </li>
+              <li>
+                <Link to="/vinos" className="hover:text-gold">
+                  Vinos
+                </Link>
+              </li>
+              <li>
+                <Link to="/tienda" className="hover:text-gold">
+                  Tienda
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="hover:text-gold">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link to="/contacto" className="hover:text-gold">
+                  Contacto
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -47,15 +72,23 @@ export function SiteFooter() {
             <ul className="mt-5 space-y-3 text-sm text-cream/80">
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" strokeWidth={1.5} />
-                <span>Calle del Viñedo, 12<br />26200 La Rioja, España</span>
+                <span>
+                  Calle Ferial, 15, 2º A
+                  <br />
+                  19002 Guadalajara, España
+                </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0 text-gold" strokeWidth={1.5} />
-                <a href="tel:+34900000000" className="hover:text-gold">+34 900 000 000</a>
+                <a href="tel:+34900000000" className="hover:text-gold">
+                  +34 900 000 000
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0 text-gold" strokeWidth={1.5} />
-                <a href="mailto:info@rmvinos.es" className="hover:text-gold">info@rmvinos.es</a>
+                <a href="mailto:rmoreno@losvinosconhistoria.com" className="hover:text-gold">
+                  rmoreno@losvinosconhistoria.com
+                </a>
               </li>
             </ul>
           </div>
@@ -66,9 +99,21 @@ export function SiteFooter() {
             © {new Date().getFullYear()} RM Vinos con Historia, S.L. Todos los derechos reservados.
           </p>
           <ul className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-cream/70">
-            <li><Link to="/aviso-legal" className="hover:text-gold">Aviso legal</Link></li>
-            <li><Link to="/privacidad" className="hover:text-gold">Política de privacidad</Link></li>
-            <li><Link to="/cookies" className="hover:text-gold">Política de cookies</Link></li>
+            <li>
+              <Link to="/aviso-legal" className="hover:text-gold">
+                Aviso legal
+              </Link>
+            </li>
+            <li>
+              <Link to="/privacidad" className="hover:text-gold">
+                Política de privacidad
+              </Link>
+            </li>
+            <li>
+              <Link to="/cookies" className="hover:text-gold">
+                Política de cookies
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -79,3 +124,4 @@ export function SiteFooter() {
     </footer>
   );
 }
+
