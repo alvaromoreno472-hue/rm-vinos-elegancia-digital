@@ -28,9 +28,9 @@ export const Route = createFileRoute("/aviso-legal")({
           modificación sin previo aviso.
         </p>
         <p>
-          Todos los contenidos, textos, imágenes y marcas son propiedad de RM Vinos con Historia,
-          S.L. o de sus legítimos titulares y están protegidos por la normativa vigente sobre
-          propiedad intelectual e industrial.
+          Todos los contenidos, textos, imágenes y marcas son propiedad de Ricardo Moreno, Vinos Con
+          Historia, S.L. o de sus legítimos titulares y están protegidos por la normativa vigente
+          sobre propiedad intelectual e industrial.
         </p>
         <p>
           La venta de bebidas alcohólicas a través de este sitio está restringida a personas mayores

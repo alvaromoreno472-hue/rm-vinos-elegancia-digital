@@ -17,8 +17,8 @@ export function SiteFooter() {
               loading="lazy"
             />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-cream/70">
-              Bodega familiar dedicada a elaborar vinos con carácter, tradición y respeto por la
-              tierra. Cada botella cuenta una historia.
+              Selección y distribución de vinos con carácter de bodegas de toda España. Cada botella
+              cuenta una historia.
             </p>
             <a
               href="https://instagram.com/rmvinosconhistoria"
@@ -73,9 +73,9 @@ export function SiteFooter() {
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" strokeWidth={1.5} />
                 <span>
-                  Calle Ferial, 15, 2º A
+                  Calle Francisco Aritio, 128, local 47
                   <br />
-                  19002 Guadalajara, España
+                  19004 Guadalajara, España
                 </span>
               </li>
               <li className="flex items-center gap-2">

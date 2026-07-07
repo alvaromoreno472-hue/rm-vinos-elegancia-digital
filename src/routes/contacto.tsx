@@ -10,10 +10,10 @@ export const Route = createFileRoute("/contacto")({
       {
         name: "description",
         content:
-          "Ponte en contacto con nosotros. Visitas guiadas, catas, pedidos y colaboraciones. La Rioja, España.",
+          "Ponte en contacto con nosotros. Catas, pedidos mayoristas, consultas y colaboraciones. Guadalajara, España.",
       },
       { property: "og:title", content: "Contacto · RM Vinos" },
-      { property: "og:description", content: "Ponte en contacto con la bodega." },
+      { property: "og:description", content: "Ponte en contacto con nuestro equipo." },
       { property: "og:url", content: "/contacto" },
     ],
     links: [{ rel: "canonical", href: "/contacto" }],
@@ -55,7 +55,7 @@ function Contacto() {
           <h1 className="mt-4 font-display text-5xl text-wine-deep md:text-6xl">Escríbenos</h1>
           <div className="mx-auto mt-5 h-px w-16 bg-gold" />
           <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            Visitas guiadas, catas, pedidos personalizados o cualquier consulta: estamos a tu
+            Catas, pedidos mayoristas, consultas personalizadas o cualquier duda: estamos a tu
             disposición.
           </p>
         </div>
@@ -134,9 +134,9 @@ function Contacto() {
                 <li className="flex items-start gap-3">
                   <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-gold" strokeWidth={1.5} />
                   <span className="text-foreground/85">
-                    Calle Ferial, 15, 2º A
+                    Calle Francisco Aritio, 128, local 47
                     <br />
-                    19002 Guadalajara, España
+                    19004 Guadalajara, España
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
@@ -172,7 +172,7 @@ function Contacto() {
               <p className="mt-4 text-sm text-foreground/85">
                 Lunes a viernes · 10:00 – 18:00
                 <br />
-                Visitas guiadas con cita previa
+                Visitas y catas con cita previa
               </p>
             </div>
           </aside>
@@ -181,8 +181,8 @@ function Contacto() {
         {/* Map */}
         <div className="mt-20 aspect-[16/9] w-full overflow-hidden border border-border">
           <iframe
-            title="Ubicación de la bodega"
-            src="https://www.google.com/maps?q=La+Rioja+Spain+winery&output=embed"
+            title="Ubicación de la tienda"
+            src="https://www.google.com/maps?q=Calle+Francisco+Aritio+128+Guadalajara+Spain&output=embed"
             loading="lazy"
             className="h-full w-full"
             referrerPolicy="no-referrer-when-downgrade"

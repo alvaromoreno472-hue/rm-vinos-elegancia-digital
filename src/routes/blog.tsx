@@ -10,7 +10,7 @@ export const Route = createFileRoute("/blog")({
       {
         name: "description",
         content:
-          "Artículos sobre vino, maridajes, eventos y cultura vinícola desde nuestra bodega familiar en La Rioja.",
+          "Artículos sobre vino, maridajes, eventos y novedades de nuestra selección de bodegas de toda España.",
       },
       { property: "og:title", content: "Blog · RM Vinos" },
       {
@@ -26,11 +26,11 @@ export const Route = createFileRoute("/blog")({
 
 export const POSTS = [
   {
-    slug: "vendimia-2025",
-    title: "Vendimia 2025: una añada excepcional",
+    slug: "seleccion-otono-2025",
+    title: "Selección de otoño 2025: los vinos que no pueden faltar en tu carta",
     excerpt:
-      "El equilibrio perfecto entre calor diurno y noches frescas ha dado uvas con una madurez fenólica sobresaliente.",
-    category: "Bodega",
+      "Repasamos las referencias que más están pidiendo bares y restaurantes esta temporada, de Ribera del Duero a Rías Baixas.",
+    category: "Selección",
     date: "12 octubre 2025",
     image: grapesImg,
   },
@@ -45,19 +45,19 @@ export const POSTS = [
   },
   {
     slug: "cata-comentada-noviembre",
-    title: "Cata comentada en la bodega — 15 de noviembre",
+    title: "Cata comentada en nuestra tienda — 15 de noviembre",
     excerpt:
-      "Te invitamos a descubrir en primera persona el corazón de nuestra bodega y catar los vinos junto al enólogo.",
+      "Te invitamos a descubrir en primera persona nuestra selección de bodegas y catar los vinos junto a nuestro equipo.",
     category: "Eventos",
     date: "10 septiembre 2025",
     image: cellarImg,
   },
   {
     slug: "roble-frances-vs-americano",
-    title: "Roble francés vs. americano: dos maneras de envejecer",
+    title: "Roble francés vs. americano: cómo influye en el vino que eliges",
     excerpt:
-      "El tipo de barrica moldea el carácter del vino. Te contamos qué aporta cada madera y por qué elegimos combinarlas.",
-    category: "Elaboración",
+      "El tipo de barrica moldea el carácter de la crianza. Te contamos qué aporta cada madera para que elijas con criterio.",
+    category: "Guías",
     date: "22 agosto 2025",
     image: cellarImg,
   },
@@ -69,11 +69,11 @@ function Blog() {
     <>
       <section className="border-b border-border/60 bg-cream-warm">
         <div className="mx-auto max-w-5xl px-6 py-24 text-center md:py-28">
-          <p className="eyebrow">Diario de bodega</p>
+          <p className="eyebrow">Blog</p>
           <h1 className="mt-4 font-display text-5xl text-wine-deep md:text-6xl">Nuestro blog</h1>
           <div className="mx-auto mt-5 h-px w-16 bg-gold" />
           <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            Noticias, maridajes, eventos y todo lo que ocurre entre cepa y cepa.
+            Noticias, maridajes, eventos y novedades de nuestra selección de vinos.
           </p>
         </div>
       </section>

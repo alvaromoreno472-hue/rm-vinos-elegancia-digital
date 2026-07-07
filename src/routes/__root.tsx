@@ -82,9 +82,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Bodega familiar española. Vinos elaborados con tradición, respeto por la tierra y una historia que se descorcha en cada botella.",
+          "Selección y distribución de vinos con carácter de bodegas de toda España. Cada botella cuenta una historia.",
       },
-      { name: "author", content: "RM Vinos con Historia, S.L." },
+      { name: "author", content: "Ricardo Moreno, Vinos Con Historia, S.L." },
       { property: "og:site_name", content: "Ricardo Moreno · Vinos con Historia" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "es_ES" },

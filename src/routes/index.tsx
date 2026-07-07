@@ -189,8 +189,8 @@ function Index() {
             @rmvinosconhistoria
           </h2>
           <p className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground">
-            Vive con nosotros la vendimia, los rincones de la bodega y todo lo que ocurre entre cepa
-            y cepa.
+            Descubre novedades de catálogo, catas, recomendaciones de maridaje y todo lo que
+            seleccionamos para ti.
           </p>
           <a
             href="https://instagram.com/rmvinosconhistoria"

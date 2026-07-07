@@ -88,18 +88,18 @@ function BlogPost() {
             {post.excerpt}
           </p>
           <p>
-            En esta entrada compartimos con vosotros los detalles y aprendizajes desde el viñedo y
-            la bodega. Cada gesto, cada decisión, es fruto de años de experiencia acumulada por
-            nuestra familia elaborando vinos en La Rioja.
+            En esta entrada compartimos con vosotros novedades y aprendizajes sobre el mundo del
+            vino. Cada selección que hacemos es fruto de visitar bodegas, catar con calma y elegir
+            solo lo que de verdad tiene algo que contar.
           </p>
           <p>
-            La elaboración artesanal exige tiempo y atención al detalle. En este blog documentamos
-            lo que hacemos y por qué lo hacemos así, con la esperanza de que os acerque un poco más
-            a nuestro trabajo.
+            Elegir bien lleva tiempo y atención al detalle. En este blog documentamos lo que
+            aprendemos en el camino, con la esperanza de que os acerque un poco más al vino que
+            servís o disfrutáis.
           </p>
           <p>
-            Si te interesa profundizar, no dudes en escribirnos o venir a visitarnos. La bodega está
-            abierta con cita previa para catas y visitas guiadas.
+            Si te interesa profundizar, no dudes en escribirnos o venir a visitarnos. Nuestra tienda
+            está abierta con cita previa para catas y asesoramiento.
           </p>
         </div>
 
